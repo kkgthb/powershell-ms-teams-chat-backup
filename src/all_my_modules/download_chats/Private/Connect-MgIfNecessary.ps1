@@ -51,7 +51,6 @@ function Connect-MgIfNecessary {
         else {
             Write-Output($false)
         }
-        
     } # end PROCESS
 
     End {} # end END

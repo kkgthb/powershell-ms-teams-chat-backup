@@ -1,7 +1,7 @@
 @{
 
     # Script module or binary module file associated with this manifest.
-    RootModule        = 'get_via_date_picker.psm1'
+    RootModule        = 'get_date_via_picker.psm1'
 
     # Source code lists ModuleVersion as "0.0.0" as a stand-in.  Use the "Version" option when we run Build-Module with a real version number.
     ModuleVersion = '0.0.0'
