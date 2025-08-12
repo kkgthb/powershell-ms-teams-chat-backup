@@ -24,7 +24,9 @@ function Connect-MgIfNecessary {
         Company: Katie Kodes
     #>
 
-    Begin {} # end BEGIN
+    Begin {
+        Import-Module -Name 'Microsoft.Graph.Authentication' -RequiredVersion '2.26.1'
+    } # end BEGIN
 
     Process {
         $az_cli_installed = Get-Command 'az' -ErrorAction 'SilentlyContinue'

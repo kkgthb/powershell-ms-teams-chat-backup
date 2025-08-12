@@ -1,0 +1,16 @@
+BeforeAll {
+    Import-Module ([IO.Path]::Combine($PSScriptRoot, '..', '..')) -Scope 'Local' -Force
+}
+
+Describe 'Get-DateViaPicker' {
+    It 'Returns a [datetime] when OK is clicked' {
+        # This test is illustrative; UI interaction cannot be automated here
+        $date = Get-DateViaPicker
+        $date | Should -BeOfType [System.DateTime]
+    }
+    It 'Returns $null when Cancel is clicked' {
+        # Manual test: cancel the dialog
+        $date = Get-DateViaPicker
+        $date | Should -Be $null
+    }
+}
